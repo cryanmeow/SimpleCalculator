@@ -1,58 +1,263 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Meowzu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="login">
-      <h1>Calculator C</h1>
+      <h1>Calculator MEOW</h1>
       <form class="" action="" method="post" name="formName" id="formName">
         <div class="form-group">
-          <input class="textbox" type="text" name="boxText" id="boxText">
-          <input class="form-control" type="button" name="btnClear" value=" C " id="btnClear">
-          <input class="form-control" type="button" name="btnResult" value=" = " id="btnResult">
+          <input class="textbox" type="text" name="boxText" id="boxText" />
+          <input
+            class="form-control"
+            type="button"
+            name="btnClear"
+            value=" C "
+            id="btnClear"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnResult"
+            value=" = "
+            id="btnResult"
+          />
         </div>
         <div class="form-group">
-          <input class="form-control" type="button" name="seven" value=" 7 " onclick="addChar('7')" id="seve">
-          <input class="form-control" type="button" name="eight" value=" 8 " onclick="addChar('8')">
-          <input class="form-control" type="button" name="nine" value=" 9 " onClick="addChar('9')">
-          <input class="form-control" type="button" name="btnAddition" value=" + " onClick="addChar('+')">
-          <input class="form-control" type="button" name="btnSubstraction" value=" - " onclick="addChar('-')">
-          <input class="form-control" type="button" name="btnSin" value=" Sin " id="btnSin">
-          <input class="form-control" type="button" name="btnCos" value=" Cos " id="btnCos">
-          <input class="form-control" type="button" name="btnTan" value=" Tan " id="btnTan">
+          <input
+            class="form-control"
+            type="button"
+            name="seven"
+            value=" 7 "
+            onclick="addChar('7')"
+            id="seve"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="eight"
+            value=" 8 "
+            onclick="addChar('8')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="nine"
+            value=" 9 "
+            onClick="addChar('9')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnAddition"
+            value=" + "
+            onClick="addChar('+')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnSubstraction"
+            value=" - "
+            onclick="addChar('-')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnSin"
+            value=" Sin "
+            id="btnSin"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnCos"
+            value=" Cos "
+            id="btnCos"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnTan"
+            value=" Tan "
+            id="btnTan"
+          />
         </div>
         <div class="form-group">
-          <input class="form-control" type="button" name="four" value=" 4 " onclick="addChar('4')">
-          <input class="form-control" type="button" name="five" value=" 5 " onclick="addChar('5')">
-          <input class="form-control" type="button" name="six" value=" 6 " onclick="addChar('6')">
-          <input class="form-control" type="button" name="btnMultipcation" value=" X " onClick="addChar('*')">
-          <input class="form-control" type="button" name="btnDivision" value=" / " onClick="addChar('/')">
-          <input class="form-control" type="button" name="btnASin" value=" aSin " id="btnASin">
-          <input class="form-control" type="button" name="btnACos" value=" aCos " id="btnACos">
-          <input class="form-control" type="button" name="btnATan" value=" aTan " id="btnATan">
+          <input
+            class="form-control"
+            type="button"
+            name="four"
+            value=" 4 "
+            onclick="addChar('4')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="five"
+            value=" 5 "
+            onclick="addChar('5')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="six"
+            value=" 6 "
+            onclick="addChar('6')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnMultipcation"
+            value=" X "
+            onClick="addChar('*')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnDivision"
+            value=" / "
+            onClick="addChar('/')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnASin"
+            value=" aSin "
+            id="btnASin"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnACos"
+            value=" aCos "
+            id="btnACos"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnATan"
+            value=" aTan "
+            id="btnATan"
+          />
         </div>
         <div class="form-group">
-          <input class="form-control" type="button" name="one" value=" 1 " onclick="addChar('1')">
-          <input class="form-control" type="button" name="two" value=" 2 " onclick="addChar('2')">
-          <input class="form-control" type="button" name="three" value=" 3 " onclick="addChar('3')">
-          <input class="form-control" type="button" name="btnPercent" value=" % " id="btnPercent">
-          <input class="form-control" type="button" name="btnSquare" value=" sqrt " id="btnSquare">
-          <input class="form-control" type="button" name="btnPhi" value=" Phi " id="btnPhi">
-          <input class="form-control" type="button" name="btnPangkat2" value=" x^2 " id="btnPangkat2">
-          <input class="form-control" type="button" name="btnEulers" value=" e^1 " id="btnEulers">
+          <input
+            class="form-control"
+            type="button"
+            name="one"
+            value=" 1 "
+            onclick="addChar('1')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="two"
+            value=" 2 "
+            onclick="addChar('2')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="three"
+            value=" 3 "
+            onclick="addChar('3')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnPercent"
+            value=" % "
+            id="btnPercent"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnSquare"
+            value=" sqrt "
+            id="btnSquare"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnPhi"
+            value=" Phi "
+            id="btnPhi"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnPangkat2"
+            value=" x^2 "
+            id="btnPangkat2"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnEulers"
+            value=" e^1 "
+            id="btnEulers"
+          />
         </div>
         <div class="form-group">
-          <input class="form-control" type="button" name="btnZero" value=" 0 " onclick="addChar('0')">
-          <input class="form-control" type="button" name="btnTwoZero" value=" 00 " onclick="addChar('00')">
-          <input class="form-control" type="button" name="btnDot" value=" . " onclick="addChar('.')">
-          <input class="form-control" type="button" name="btnMins" value=" +/- " id="btnMins">
-          <input class="form-control" type="button" name="btnRound" value=" Round " id="btnRound">
-          <input class="form-control" type="button" name="btnRdm" value=" Rdm " id="btnRdm">
-          <input class="form-control" type="button" name="btnLog" value=" Log " id="btnLog">
-          <input class="form-control" type="button" name="btnLn" value=" Ln " id="btnLn">
+          <input
+            class="form-control"
+            type="button"
+            name="btnZero"
+            value=" 0 "
+            onclick="addChar('0')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnTwoZero"
+            value=" 00 "
+            onclick="addChar('00')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnDot"
+            value=" . "
+            onclick="addChar('.')"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnMins"
+            value=" +/- "
+            id="btnMins"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnRound"
+            value=" Round "
+            id="btnRound"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnRdm"
+            value=" Rdm "
+            id="btnRdm"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnLog"
+            value=" Log "
+            id="btnLog"
+          />
+          <input
+            class="form-control"
+            type="button"
+            name="btnLn"
+            value=" Ln "
+            id="btnLn"
+          />
         </div>
       </form>
     </div>
